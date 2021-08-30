@@ -8,6 +8,9 @@ import { News } from './src/screens/News';
 const App = () => {
   return (
     <SafeAreaProvider>
+      <Provider store={store}>
+        <News />
+      </Provider>
     </SafeAreaProvider>
   );
 };
